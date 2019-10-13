@@ -1,0 +1,4 @@
+{
+	"mongoURL":"mongodb+srv://sapna123:sapna123@devconnector-08oay.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret" :"secretKey"
+}
