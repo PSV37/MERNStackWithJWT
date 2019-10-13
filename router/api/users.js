@@ -87,4 +87,15 @@ router.post('/',
 	})
 
 
+router.get('/all', async (req, res) => {
+	try{
+		// get all users
+		const users = await User.find().select('-password');
+
+		res.status(200).json({users})
+	} catch(err) {
+		console.log(err)
+		res.status(401).json({msg:'ACCESS DENIED'})
+	}
+})
 module.exports = router;
