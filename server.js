@@ -1,4 +1,4 @@
-const express = require('express')
+	const express = require('express')
 const connectDB = require('./config/db')
 const users = require('./router/api/users')
 const profiles = require('./router/api/profile')
@@ -28,3 +28,4 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
 	console.log('server running on ' + PORT)
 })
+
